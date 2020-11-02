@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/********************************************
+        TITRE
+*********************************************/
+.bloc-titre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0.2em 0.5em;
+}
+
+.center-div {
+    margin: 0 auto;
+}
+
+.logo-titre {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 18em;
+}
+
+.slogan {
+    color: #52ACDD;
+    font-size: 2.2rem;
+    padding: 0 0.8em 0.5em;
+}
+
+/*****************************************
+        MENU
+******************************************/
+nav {
+    width: 100%;
+    background-color: #F9D435;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: baseline;
+    padding: 1em;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 1em;
+
+}
+
+nav a {
+    color: #52ACDD;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/**************************************
+    Partie un
+***************************************/
+section {
+    width: 100%;
+    padding: 1em;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+    /*gap: 2em;*/
+    align-items: center;
+}
+
+.partie-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partie-text h1 {
+    padding: 2em 1.6em;
+    font-size: 2.2rem;
+}
+
+.partie-text h2 {
+    padding: 1em 2em;
+    font-size: 1.8rem;
+}
+
+.partie-text p {
+    padding: 1em 2em;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.partie-img {
+    width: 100%;
+    height: auto;
+    margin: 2em auto;
+    padding-top: 4em;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.sect1 {
+    background-color: aliceblue;
+}
+
+.sect2 {
+    background-color: antiquewhite;
+}
+
+.sect3 {
+    background-color: cornsilk;
+}
+
+@media (max-width: 450px) {
+    .partie-text {
+        max-width: 370px;
+    }
+}
+
+/**********************************************
+        FORMULAIRE
+************************************************/
+
+form,
+input,
+button {
+    /*display: flex;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*display: block;*/
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-radius: 0.75em;
+}
+
+.formulaire {
+    margin: 2em auto;
+    padding: 0 auto;
+}
+
+.form-ligne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1.2em 0.5em;
+}
+
+.form-ligne>* {
+    flex-basis: calc(calc(30px - 100%) * 999);
+    flex-grow: 2;
+    /*flex: 1 1 0;
+    margin-left: 1em;
+    max-width: 450px;*/
+}
